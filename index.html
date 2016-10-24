@@ -1,13 +1,77 @@
 <!DOCTYPE html>
 <html>
+
 <head lang="uk">
-    <meta charset="UTF-8">
-    <title>My Page</title>
+  <meta charset="UTF-8">
+  <title>Buy List</title>
 
+  <link rel="stylesheet" href="main.css" charset="utf-8">
 
-    <link rel="stylesheet" type="text/css" href="main.css" />
+  <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
 </head>
+
 <body>
-<h1>Hello World</h1>
+
+  <div class="container">
+
+    <div class="control-panel div-shadow">
+      <form action="">
+        <input type="text" placeholder="Назва товару">
+        <input type="submit" class="none-style-active" value="Додати">
+      </form>
+
+      <div class="product top-line" id="1">
+        <input type="text" placeholder="Нова назва" value="Помідори">
+        <div class="controller">
+          <button class="circle-btn btn-decrement inective btn-sign">-</button>
+          <span class="count-label">1</span>
+          <button class="circle-btn btn-increment btn-sign">+</button>
+
+          <button type="button" class="delete btn-sign">x</button>
+          <button type="button" class="boughted btn-sign">Куплено</button>
+        </div>
+      </div>
+
+        <div class="product top-line" id="2">
+          <input type="text" placeholder="Нова назва" value="Печиво">
+          <div class="controller">
+            <button class="circle-btn btn-decrement btn-sign">-</button>
+            <span class="count-label">2</span>
+            <button class="circle-btn btn-increment btn-sign">+</button>
+
+            <button type="button" class="delete btn-sign">x</button>
+            <button type="button" class="boughted btn-sign">Куплено</button>
+          </div>
+        </div>
+
+        <div class="product top-line" id="3">
+          <input type="text" placeholder="Нова назва" value="Сир" class="boughted-text-style">
+          <div class="controller">
+            <button class="circle-btn btn-decrement btn-sign display-none">-</button>
+            <span class="count-label centered">1</span>
+            <button class="circle-btn btn-increment btn-sign display-none">+</button>
+
+            <button type="button" class="delete btn-sign display-none">x</button>
+            <button type="button" class="boughted btn-sign">Не куплено</button>
+          </div>
+        </div>
+    </div>
+
+    <div class="banner div-shadow">
+      <div class="left btm-line">Залишилось</div>
+      <div class="left-res btm-line">
+        <div class="label">Помідори <div class="quantity">1</div></div>
+        <div class="label">Печиво <div class="quantity">2</div></div>
+      </div>
+
+      <div class="bought btm-line">Куплено</div>
+      <div class="bought-res">
+        <div class="label boughted-text-style">Сир<div class="quantity boughted-text-style">1</div></div>
+      </div>
+    </div>
+
+  </div>
+
 </body>
+
 </html>

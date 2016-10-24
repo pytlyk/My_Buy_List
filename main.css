@@ -1,3 +1,274 @@
-h1 {
-    color: red;
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #DADADA
+}
+
+.container {
+  font-family: 'Lato', sans-serif!important;
+  margin: 100px;
+}
+
+.div-shadow {
+  border: 1px solid #DBDBD7;
+  border-radius: 5px;
+  box-shadow: -1px 2px 10px #BFBFBB;
+}
+
+.control-panel {
+  width: 760px;
+  /*height: 70px;*/
+  margin-right: 30px;
+  background-color: white;
+  /*padding: 15px;*/
+}
+
+form {
+  padding: 15px;
+}
+
+form input[type="text"] {
+  height: 40px;
+  width: 617px;
+  padding: 5px;
+  border: 1px solid #E1E2E3;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  font-size: 14px;
+}
+
+form input[type="text"]:focus {
+  outline: none;
+  border: 1px solid #439ee3;
+}
+
+form input[type="text"]:focus::-webkit-input-placeholder {
+  color: black;
+}
+
+form input[type="submit"] {
+  margin-left: -3px;
+  height: 40px;
+  width:110px;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  background-color: #2185D0;
+  border: none;
+  border-bottom: 5px solid #3366cc;
+  padding-top: 6px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+form input[type="submit"]:hover {
+  background-color: #1678c2;
+  border-bottom-color: #186bab;
+  cursor: pointer;
+}
+
+.none-style-active:active {
+  outline: none;
+}
+
+.banner {
+  min-height: 165px;
+  width: 335px;
+  background-color: white;
+  font-weight: bolder;
+  font-size: 18px;
+  border-radius: 5px;
+  position: fixed;
+}
+
+.control-panel, .banner {
+  display: inline-block;
+  float: left;
+}
+
+.left-res, .bought-res {
+  min-height: 30px;
+  padding: 14px;
+  box-sizing: content-box;
+}
+
+.left, .bought {
+  height: 55px;
+  padding: 15px;
+}
+
+.btm-line {
+  border-bottom: 1px solid #E1E2E3;
+}
+
+.top-line {
+  border-top: 1px solid #E1E2E3;
+}
+
+.product {
+  height: 50px;
+  padding: 8px 17px;
+}
+
+.product input {
+  margin-top: 4px;
+  padding: 5px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  float: left;
+  margin-right: 100px;
+}
+
+.product input:focus {
+  font-size: 10px;
+  box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+  border: 1px solid rgba(81, 203, 238, 1);
+  border-radius: 3px;
+  margin-right: 146px;
+}
+
+.circle-btn {
+  width: 31px;
+  height: 33px;
+  border-radius: 50%;
+  float: left;
+  margin: 0 4px 0 4px;
+  border: none;
+}
+
+.circle-btn:hover {
+  cursor: pointer;
+}
+
+.btn-decrement {
+  background-color: #D01919;
+  border-bottom: 3px solid #bf2728;
+}
+
+.btn-decrement:hover {
+  background-color: #CA1010;
+  border-bottom-color: #b61a1b;
+}
+
+.btn-decrement.inective {
+  border: none;
+  opacity: 0.5;
+}
+
+.btn-decrement.inective:hover {
+  background-color: #D01919;
+}
+
+.btn-increment {
+  background-color: #21ba45;
+  border-bottom: 3px solid #21a341;
+}
+
+.btn-increment:hover {
+  background-color: #0ea432;
+  border-bottom-color: #119131;
+}
+
+.btn-sign {
+  font-size: 15px;
+  color: #fbe9e9;
+  font-weight: bold;
+}
+
+.count-label {
+  float: left;
+  border-radius: 3px;
+  height: 27px;
+  background-color: #e8e8e8;
+  color: #626262;
+  font-size: 12px;
+  text-align: center;
+  margin-top: 3px;
+  padding-top: 5px;
+  min-width: 27px;
+}
+
+.boughted {
+  float: right;
+  padding: 13px;
+  width: 82px;
+  height: 32px;
+  padding: 5px;
+  background-color: #F2F2F2;
+  border: 1px solid #E1E2E3;
+  border-radius: 4px;
+  border-bottom: 3px solid #cfcfd0;
+  font-size: 10px;
+  font-weight: normal;
+  color: #626262;
+  cursor: pointer;
+}
+
+.boughted:hover {
+  background-color: #c6c7c8;
+  border-color: #acadaf;
+  border-bottom-color: #a9aaad;
+}
+
+.delete {
+  float: right;
+  margin-left: 7px;
+  padding: 13px;
+  width: 33px;
+  height: 32px;
+  padding: 5px;
+  background-color: #db2828;
+  border-radius: 4px;
+  border: none;
+  border-bottom: 3px solid #bf2728;
+  cursor: pointer;
+}
+
+.delete:hover {
+  background-color: #d01919;
+  border-bottom-color: #b61a1b;
+}
+
+.boughted-btn-display {
+  display: none;
+}
+
+.boughted-text-style {
+  text-decoration: line-through;
+}
+
+.display-none {
+  display: none;
+}
+
+.centered {
+  margin-left: 39px;
+}
+
+.label {
+  display: inline-block;
+  height: 30px;
+  background-color: #e8e8e8;
+  color: #5e5e5e;
+  font-size: 9px;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.quantity {
+  position: relative;
+  float:right;
+  text-align: center;
+  height: 18px;
+  width: 18px;
+  border-radius: 9px;
+  background-color: #f2711c;
+  color: white;
+  padding: 3px;
+  margin-top: -4px;
+  margin-left: 4px;
 }
