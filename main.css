@@ -8,7 +8,9 @@ html {
 
 .container {
   font-family: 'Lato', sans-serif!important;
-  margin: 100px;
+  width: 1130px;
+  margin: auto;
+  margin-top: 7%;
 }
 
 .div-shadow {
@@ -80,7 +82,6 @@ form input[type="submit"]:hover {
   font-weight: bolder;
   font-size: 18px;
   border-radius: 5px;
-  position: fixed;
 }
 
 .control-panel, .banner {
@@ -272,3 +273,5 @@ form input[type="submit"]:hover {
   margin-top: -4px;
   margin-left: 4px;
 }
+Status API Training Shop Blog About Pricing
+© 2016 GitHub, Inc. Terms Privacy Security Contact Help
