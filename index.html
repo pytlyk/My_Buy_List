@@ -15,24 +15,12 @@
   <div class="container">
 
     <div class="control-panel div-shadow">
-      <form action="">
-        <input type="text" placeholder="Назва товару">
+      <form>
+        <input type="text" class="prod-name" placeholder="Назва товару" required>
         <input type="submit" class="none-style-active" value="Додати">
       </form>
 
-      <div class="product top-line" id="1">
-        <input type="text" placeholder="Нова назва" value="Помідори">
-        <div class="controller">
-          <button class="circle-btn btn-decrement inective btn-sign">-</button>
-          <span class="count-label">1</span>
-          <button class="circle-btn btn-increment btn-sign">+</button>
-
-          <button type="button" class="delete btn-sign">x</button>
-          <button type="button" class="boughted btn-sign">Куплено</button>
-        </div>
-      </div>
-
-        <div class="product top-line" id="2">
+        <!--<div class="product top-line">
           <input type="text" placeholder="Нова назва" value="Печиво">
           <div class="controller">
             <button class="circle-btn btn-decrement btn-sign">-</button>
@@ -42,9 +30,9 @@
             <button type="button" class="delete btn-sign">x</button>
             <button type="button" class="boughted btn-sign">Куплено</button>
           </div>
-        </div>
+        </div>-->
 
-        <div class="product top-line" id="3">
+        <!--<div class="product top-line" id="3">
           <input type="text" placeholder="Нова назва" value="Сир" class="boughted-text-style">
           <div class="controller">
             <button class="circle-btn btn-decrement btn-sign display-none">-</button>
@@ -54,28 +42,24 @@
             <button type="button" class="delete btn-sign display-none">x</button>
             <button type="button" class="boughted btn-sign">Не куплено</button>
           </div>
-        </div>
+        </div>-->
     </div>
 
     <div class="banner div-shadow">
       <div class="left btm-line">Залишилось</div>
       <div class="left-res btm-line">
-        <div class="label">Помідори <div class="quantity">1</div></div>
-        <div class="label">Печиво <div class="quantity">2</div></div>
+        <!--<div class="label">Помідори <div class="quantity" id="labN1">1</div></div>-->
       </div>
 
       <div class="bought btm-line">Куплено</div>
       <div class="bought-res">
-        <div class="label boughted-text-style">Сир<div class="quantity boughted-text-style">1</div></div>
+        <!--<div class="label boughted-text-style">Сир<div class="quantity boughted-text-style">1</div></div>-->
       </div>
     </div>
-
   </div>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-  <script type="text/javascript" src="js/main.js">
-
-  </script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>

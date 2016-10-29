@@ -10,7 +10,7 @@ html {
   font-family: 'Lato', sans-serif!important;
   width: 1130px;
   margin: auto;
-  margin-top: 7%;
+  position: relative;
 }
 
 .div-shadow {
@@ -20,11 +20,12 @@ html {
 }
 
 .control-panel {
-  width: 760px;
+  width: 765px;
   /*height: 70px;*/
   margin-right: 30px;
   background-color: white;
   /*padding: 15px;*/
+  position: relative;
 }
 
 form {
@@ -41,6 +42,10 @@ form input[type="text"] {
   font-size: 14px;
 }
 
+.warning-input {
+  border: 2px solid red;
+}
+
 form input[type="text"]:focus {
   outline: none;
   border: 1px solid #439ee3;
@@ -50,8 +55,8 @@ form input[type="text"]:focus::-webkit-input-placeholder {
   color: black;
 }
 
-form input[type="submit"] {
-  margin-left: -3px;
+form input[type=submit]{
+  margin-left: -5px;
   height: 40px;
   width:110px;
   font-size: 14px;
@@ -82,6 +87,7 @@ form input[type="submit"]:hover {
   font-weight: bolder;
   font-size: 18px;
   border-radius: 5px;
+  position: relative;
 }
 
 .control-panel, .banner {
@@ -154,7 +160,7 @@ form input[type="submit"]:hover {
   border-bottom-color: #b61a1b;
 }
 
-.btn-decrement.inective {
+.btn-decrement:disabled {
   border: none;
   opacity: 0.5;
 }
@@ -258,6 +264,8 @@ form input[type="submit"]:hover {
   font-weight: bold;
   padding: 10px;
   border-radius: 5px;
+  margin-bottom: 3px;
+  margin-right: 3px;
 }
 
 .quantity {
@@ -273,5 +281,3 @@ form input[type="submit"]:hover {
   margin-top: -4px;
   margin-left: 4px;
 }
-Status API Training Shop Blog About Pricing
-© 2016 GitHub, Inc. Terms Privacy Security Contact Help
