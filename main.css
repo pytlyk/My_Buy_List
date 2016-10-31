@@ -76,6 +76,11 @@ form input[type="submit"]:hover {
   cursor: pointer;
 }
 
+input:disabled {
+  background-color: white;
+  color: black;
+}
+
 .none-style-active:active {
   outline: none;
 }

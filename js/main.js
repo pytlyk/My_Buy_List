@@ -114,6 +114,7 @@ $(function(){
         $(div).find(".count-label").addClass("centered");
         $(div).parent().find("input").addClass("boughted-text-style");
         $(this).text("Не куплено");
+        $(div).parent().find("input").attr("disabled", true);
         //make tag boughted
         var label_id = "#tag"+$(div).find(".count-label").attr("id").charAt(5);
         var label = $(".banner").find(".left-res").find(label_id).parent().remove();
@@ -128,6 +129,7 @@ $(function(){
         $(div).find(".delete").removeClass("display-none");
         $(div).find(".count-label").removeClass("centered");
         $(div).parent().find("input").removeClass("boughted-text-style");
+        $(div).parent().find("input").attr("disabled", false);
         $(this).text("Куплено");
         //make tag unboughted
         var label_id = "#tag"+$(div).find(".count-label").attr("id").charAt(5);
